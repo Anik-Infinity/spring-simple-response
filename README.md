@@ -27,7 +27,7 @@ It will generate response as follows
 **For Single Resource**
 
 ```java
-public ResponseEntity<ApiResponse> singleResource(int id) {
+public ResponseEntity<ApiResponse> singleResource(UUID id) {
     UserDto user = userService.findById(id);
     return ResponseUtils.buildResponse(HttpStatus.OK, user, "User found");
 }
@@ -55,7 +55,7 @@ It will generate response as follows
 ```java
 public ResponseEntity<ApiResponse> paginatedCollectionResource(Pageable pageable) {
     Page<UserDto> users = userService.findAll(pageable);
-    return ResponseUtils.buildPaginatedResponse(users, "Author List");
+    return ResponseUtils.buildPaginatedResponse(users, "User list");
 }
 ```
 
