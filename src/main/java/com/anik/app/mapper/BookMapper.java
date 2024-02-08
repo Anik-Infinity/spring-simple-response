@@ -5,7 +5,6 @@ import com.anik.app.dto.book.BookDto;
 import com.anik.app.dto.book.CreateBookDto;
 import com.anik.app.dto.book.UpdateBookDto;
 import com.anik.app.entity.book.Book;
-import org.mapstruct.Context;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 
@@ -13,7 +12,7 @@ import org.mapstruct.MappingTarget;
 public interface BookMapper {
     Book toEntity(CreateBookDto bookDto);
 
-    BookDto toDto(Book book, @Context CycleAvoidingMappingContext cycleAvoidingMappingContext);
+    BookDto toDto(Book book);
 
     void dtoToEntity(UpdateBookDto bookDto, @MappingTarget Book book);
 }
