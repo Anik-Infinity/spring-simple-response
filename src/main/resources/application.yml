@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/relationTest
-    username: root
-    password: Pass1234
+    url: jdbc:h2:mem:testDB
+    username: sa
+    password:
   jpa:
     hibernate:
       ddl-auto: update
@@ -13,6 +13,8 @@ spring:
         transaction:
           jta:
             platform: true
-    database: mysql
-    database-platform: org.hibernate.dialect.MySQLDialect
-#    open-in-view: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: h2
+  h2:
+    console:
+      enabled: true
