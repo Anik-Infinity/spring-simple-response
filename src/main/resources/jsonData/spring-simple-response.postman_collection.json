@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "c40cc478-9191-4117-a865-a88b18251a07",
+		"name": "spring-simple-response",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25391688"
+	},
+	"item": [
+		{
+			"name": "author",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Agatha Christie\",\n    \"books\": [\n        {\n            \"title\": \"Murder on the Orient Express\",\n            \"isbn\": \"4543131534623226\"\n        },\n        {\n            \"title\": \"Crooked House\",\n            \"isbn\": \"835321453124314\"\n        },\n        {\n            \"title\": \"Hallowe'en Party\",\n            \"isbn\": \"431613437632343\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/authors"
+					},
+					"response": []
+				},
+				{
+					"name": "get-by-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/v1/authors/aa8e6cd1-323f-49aa-b849-bdfc445a4d02"
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/authors/all?pageNo=0&pageSize=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"authors",
+								"all"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Agatha Christie\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/authors/aa8e6cd1-323f-49aa-b849-bdfc445a4d02"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/v1/authors/113c4799-2ad3-458a-a60c-1edca1761446"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Twelfth Night\",\n    \"isbn\": \"987654321\",\n    \"authorId\": \"81f6cb46-c830-4c81-a977-efc4ec049154\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/books"
+					},
+					"response": []
+				},
+				{
+					"name": "get-by-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/v1/books/555cc24f-2855-43ef-ac83-2c247715a5a5"
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/books/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"all"
+							],
+							"query": [
+								{
+									"key": "authorId",
+									"value": "d462da7e-98e2-4c45-82cc-9ce2fd9ed7ac",
+									"disabled": true
+								},
+								{
+									"key": "pageNo",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": "10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Smarter Faster Better\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/books/555cc24f-2855-43ef-ac83-2c247715a5a5"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/v1/books/5c0b629c-b5b6-4f68-8408-a90e36d6d4d6"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
