@@ -1,13 +1,156 @@
-{
-  "name": "Charles Duhigg",
-  "books": [
-    {
-      "title": "The power of habit",
-      "isbn": "9789849337423"
-    },
-    {
-      "title": "Smarter Faster Better",
-      "isbn": "9124541234244"
-    }
-  ]
-}
+[
+  {
+    "name": "Charles Duhigg",
+    "books": [
+      {
+        "title": "The Power of Habit",
+        "isbn": "9789849337423"
+      },
+      {
+        "title": "Smarter Faster Better",
+        "isbn": "9124541234244"
+      }
+    ]
+  },
+  {
+    "name": "Jane Doe",
+    "books": [
+      {
+        "title": "The Secret Garden",
+        "isbn": "9786574839201"
+      },
+      {
+        "title": "A Tale of Two Cities",
+        "isbn": "9781287465903"
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "isbn": "9789432167895"
+      }
+    ]
+  },
+  {
+    "name": "John Smith",
+    "books": [
+      {
+        "title": "Pride and Prejudice",
+        "isbn": "9785147890234"
+      },
+      {
+        "title": "The Great Gatsby",
+        "isbn": "9783487590128"
+      },
+      {
+        "title": "1984",
+        "isbn": "9789012345678"
+      }
+    ]
+  },
+  {
+    "name": "Emily Bronte",
+    "books": [
+      {
+        "title": "Wuthering Heights",
+        "isbn": "9786098765432"
+      },
+      {
+        "title": "Jane Eyre",
+        "isbn": "9781234567890"
+      }
+    ]
+  },
+  {
+    "name": "Mark Twain",
+    "books": [
+      {
+        "title": "Adventures of Huckleberry Finn",
+        "isbn": "9789876543210"
+      },
+      {
+        "title": "The Adventures of Tom Sawyer",
+        "isbn": "9783456789012"
+      },
+      {
+        "title": "A Connecticut Yankee in King Arthur's Court",
+        "isbn": "9786789012345"
+      }
+    ]
+  },
+  {
+    "name": "Agatha Christie",
+    "books": [
+      {
+        "title": "Murder on the Orient Express",
+        "isbn": "9788901234567"
+      },
+      {
+        "title": "And Then There Were None",
+        "isbn": "9780123456789"
+      }
+    ]
+  },
+  {
+    "name": "J.K. Rowling",
+    "books": [
+      {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "isbn": "9782345678901"
+      },
+      {
+        "title": "Harry Potter and the Chamber of Secrets",
+        "isbn": "9784567890123"
+      },
+      {
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "isbn": "9785678901234"
+      },
+      {
+        "title": "Harry Potter and the Goblet of Fire",
+        "isbn": "9786789012345"
+      },
+      {
+        "title": "Harry Potter and the Order of the Phoenix",
+        "isbn": "9787890123456"
+      }
+    ]
+  },
+  {
+    "name": "George Orwell",
+    "books": [
+      {
+        "title": "Animal Farm",
+        "isbn": "9781234567890"
+      },
+      {
+        "title": "Nineteen Eighty-Four",
+        "isbn": "9782345678901"
+      }
+    ]
+  },
+  {
+    "name": "F. Scott Fitzgerald",
+    "books": [
+      {
+        "title": "The Great Gatsby",
+        "isbn": "9783456789012"
+      },
+      {
+        "title": "Tender Is the Night",
+        "isbn": "9784567890123"
+      }
+    ]
+  },
+  {
+    "name": "Leo Tolstoy",
+    "books": [
+      {
+        "title": "War and Peace",
+        "isbn": "9785678901234"
+      },
+      {
+        "title": "Anna Karenina",
+        "isbn": "9786789012345"
+      }
+    ]
+  }
+]
